@@ -18,10 +18,10 @@ resources:
 images:
 - name: broadcaster
   newName: europe-north1-docker.pkg.dev/dwk-gke-509508/dwk-repo/broadcaster
-  newTag: a80bd6ebf616b6572db8d9e7151986467333a0e1
+  newTag: v1.0.3
 - name: todo-backend
   newName: europe-north1-docker.pkg.dev/dwk-gke-509508/dwk-repo/backend
-  newTag: a80bd6ebf616b6572db8d9e7151986467333a0e1
+  newTag: v1.0.3
 - name: todo-frontend
   newName: europe-north1-docker.pkg.dev/dwk-gke-509508/dwk-repo/frontend
-  newTag: a80bd6ebf616b6572db8d9e7151986467333a0e1
+  newTag: v1.0.3

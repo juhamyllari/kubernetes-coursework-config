@@ -9,19 +9,19 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: production
+# Only production backs up the database.
 resources:
 - ../../base
-# Only production backs up the database.
 - backup-serviceaccount.yaml
 - backup-cronjob.yaml
 
 images:
 - name: broadcaster
   newName: europe-north1-docker.pkg.dev/dwk-gke-509508/dwk-repo/broadcaster
-  newTag: v1.0.3
+  newTag: v1.0.4
 - name: todo-backend
   newName: europe-north1-docker.pkg.dev/dwk-gke-509508/dwk-repo/backend
-  newTag: v1.0.3
+  newTag: v1.0.4
 - name: todo-frontend
   newName: europe-north1-docker.pkg.dev/dwk-gke-509508/dwk-repo/frontend
-  newTag: v1.0.3
+  newTag: v1.0.4
